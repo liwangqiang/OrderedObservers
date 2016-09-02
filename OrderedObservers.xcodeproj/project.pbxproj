@@ -12,7 +12,11 @@
 		73F6F58F1D7865D7008C6D8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73F6F58D1D7865D7008C6D8A /* Main.storyboard */; };
 		73F6F5911D7865D7008C6D8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73F6F5901D7865D7008C6D8A /* Assets.xcassets */; };
 		73F6F5941D7865D7008C6D8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73F6F5921D7865D7008C6D8A /* LaunchScreen.storyboard */; };
-		73F6F59F1D7865D7008C6D8A /* OrderedObserversTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F6F59E1D7865D7008C6D8A /* OrderedObserversTests.swift */; };
+		73F6F5AA1D786608008C6D8A /* NotificationCenterExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F6F5A91D786608008C6D8A /* NotificationCenterExtensionTest.swift */; };
+		73F6F5AC1D78672F008C6D8A /* NotificationCenter+ViewerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F6F5AB1D78672F008C6D8A /* NotificationCenter+ViewerExtension.swift */; };
+		73F6F5AE1D7871D1008C6D8A /* ViewerNotificationObserverQueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F6F5AD1D7871D1008C6D8A /* ViewerNotificationObserverQueueTest.swift */; };
+		73F6F5B01D78725E008C6D8A /* ViewerObserverQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F6F5AF1D78725E008C6D8A /* ViewerObserverQueue.swift */; };
+		73F6F5B21D7888AF008C6D8A /* ViewerObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F6F5B11D7888AF008C6D8A /* ViewerObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +38,12 @@
 		73F6F5931D7865D7008C6D8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73F6F5951D7865D7008C6D8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73F6F59A1D7865D7008C6D8A /* OrderedObserversTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderedObserversTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		73F6F59E1D7865D7008C6D8A /* OrderedObserversTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedObserversTests.swift; sourceTree = "<group>"; };
 		73F6F5A01D7865D7008C6D8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73F6F5A91D786608008C6D8A /* NotificationCenterExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenterExtensionTest.swift; sourceTree = "<group>"; };
+		73F6F5AB1D78672F008C6D8A /* NotificationCenter+ViewerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+ViewerExtension.swift"; sourceTree = "<group>"; };
+		73F6F5AD1D7871D1008C6D8A /* ViewerNotificationObserverQueueTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewerNotificationObserverQueueTest.swift; sourceTree = "<group>"; };
+		73F6F5AF1D78725E008C6D8A /* ViewerObserverQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewerObserverQueue.swift; sourceTree = "<group>"; };
+		73F6F5B11D7888AF008C6D8A /* ViewerObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewerObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,9 @@
 				73F6F5901D7865D7008C6D8A /* Assets.xcassets */,
 				73F6F5921D7865D7008C6D8A /* LaunchScreen.storyboard */,
 				73F6F5951D7865D7008C6D8A /* Info.plist */,
+				73F6F5AB1D78672F008C6D8A /* NotificationCenter+ViewerExtension.swift */,
+				73F6F5AF1D78725E008C6D8A /* ViewerObserverQueue.swift */,
+				73F6F5B11D7888AF008C6D8A /* ViewerObserver.swift */,
 			);
 			path = OrderedObservers;
 			sourceTree = "<group>";
@@ -90,7 +101,8 @@
 		73F6F59D1D7865D7008C6D8A /* OrderedObserversTests */ = {
 			isa = PBXGroup;
 			children = (
-				73F6F59E1D7865D7008C6D8A /* OrderedObserversTests.swift */,
+				73F6F5A91D786608008C6D8A /* NotificationCenterExtensionTest.swift */,
+				73F6F5AD1D7871D1008C6D8A /* ViewerNotificationObserverQueueTest.swift */,
 				73F6F5A01D7865D7008C6D8A /* Info.plist */,
 			);
 			path = OrderedObserversTests;
@@ -200,7 +212,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				73F6F58C1D7865D7008C6D8A /* ViewController.swift in Sources */,
+				73F6F5AC1D78672F008C6D8A /* NotificationCenter+ViewerExtension.swift in Sources */,
+				73F6F5B21D7888AF008C6D8A /* ViewerObserver.swift in Sources */,
 				73F6F58A1D7865D7008C6D8A /* AppDelegate.swift in Sources */,
+				73F6F5B01D78725E008C6D8A /* ViewerObserverQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +223,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73F6F59F1D7865D7008C6D8A /* OrderedObserversTests.swift in Sources */,
+				73F6F5AE1D7871D1008C6D8A /* ViewerNotificationObserverQueueTest.swift in Sources */,
+				73F6F5AA1D786608008C6D8A /* NotificationCenterExtensionTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,10 +367,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = OrderedObserversTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bruceli.OrderedObserversTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrderedObservers.app/OrderedObservers";
 			};
 			name = Debug;
@@ -363,6 +381,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = OrderedObserversTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bruceli.OrderedObserversTests;
